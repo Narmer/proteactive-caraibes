@@ -3,6 +3,7 @@
 <html lang="fr" manifest="proteactive.manifest">
 <head>
 <meta charset="utf-8"><title>PROTEA P2</title>
+  <script type="text/javascript" src="assets/img/Chart.min.js"></script>
 <!-- Fav and touch icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
@@ -82,7 +83,15 @@
             <ul class="nav sf-menu clearfix">
               <li class="sub-menu active"><a href="#">Notre solution</a>
                 <ul>
-                  <li><a href="./protea.html">Le Protea P2</a></li>
+                  <li><a href="./protea.html">Le Protea P2</a>
+                    <ul>
+                      <li><a href="./#">Traitement Diesel P550</a></li>
+                      <li><a href="./#">Traitement fuel lourd</a></li>
+                      <li><a href="./#">Traitement P260</a></li>
+                      <li><a href="./#">Traitement P231</a></li>
+                      <li><a href="./#">Stock Cleaner 2</a></li>
+                    </ul>
+                  </li>
                   <li><a href="./ecologie.html">Engagement E/S</a></li>
                   <li><a href="./utilisation.html">Utilisation</a></li>
                   <li><a href="./certifications.html">Nos certifications</a></li>
@@ -122,22 +131,67 @@
     <section id="second">
       <div class="container">
         <div class="row">
+          <div class="span12">
+            <h2 class="text-center">PROTEA P2 est un ensemble efficace de traitements et d'additifs pour carburant</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <h2 class="text-center">Les traitements carburant PROTEA P2 fournissent de nombreux avantages</h2>
+          </div>
           <ul class="thumbnails">
             <li class="span4 thumbnail">
               <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-cloud"><i class="circle-border"></i></i>
-                <h3>Réducation des gaz</h3>
+                <h3>Réduit les émissions de gaz polluants</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-sort-by-attributes-alt"><i class="circle-border"></i></i>
+                <h3>Diminue la consommation de carburant</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-dashboard"><i class="circle-border"></i></i>
+                <h3>Restaure les performances initiales du moteur</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
               </div>
             </li>
             <li class="span4 thumbnail">
               <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-tint"><i class="circle-border"></i></i>
-                <h3>Economie de carburant</h3>
+                <h3>Empêche et élimine les formations d'eau</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
               </div>
             </li>
             <li class="span4 thumbnail">
-              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-cogs"><i class="circle-border"></i></i>
-                <h3>Augmente la puissance</h3>
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-asterisk"><i class="circle-border"></i></i>
+                <h3>Evite les corrosions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-move"><i class="circle-border"></i></i>
+                <h3>Disperse les boues et les sédiments</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-bug"><i class="circle-border"></i></i>
+                <h3>Elimine les bactéries</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-shield"><i class="circle-border"></i></i>
+                <h3>Nettoie et protège les cuves, réservoirs, moteurs et circuits d'alimentation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
+              </div>
+            </li>
+            <li class="span4 thumbnail">
+              <div class="block-thumbnail maxheight col"> <i class="icon-3x icon-refresh"><i class="circle-border"></i></i>
+                <h3>Nettoie les chambres de combustion</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
               </div>
             </li>
@@ -152,7 +206,9 @@
           <div class="span12">
             <h2 class="text-center">Quelques Statistiques</h2>
           </div>
-
+          <div class="span4">
+            <canvas id="canvas" height="400" width="400"></canvas>
+          </div>
         </div>
       </div>
     </section>
@@ -161,7 +217,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <h2 class="text-center">Quelques utilisations de notre solution</h2>
+            <h2 class="text-center">Les diverses utilisation des traitements PROTEA P2</h2>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut lao.</p>
           </div>
           <div class="span6 usafe">
@@ -195,9 +251,9 @@
     <section id="fifth">
       <div class="container">
         <div class="row">
-          <article class="span8">
-            <h3 class="title"> <span>Description courte</span> </h3>
-            <h4>Sous titre</h4>
+          <div class="span12">
+            <h3 class="title"> <span>Les différences entre les additifs dans le commerce et nos traitements PROTEA P2</span> </h3>
+<!--
             <div class="block-indent-1">
               <figure class="img-polaroid"><img src="assets/img/370x248-img.jpg" alt=""></figure>
               <div class="extra-wrap"> <a href="#" class="text1">Lorem ipsum dolor sit amet consectetuer adipiscin gelit sed diam nonummnibh euismod.</a>
@@ -205,20 +261,356 @@
                 <p>Accumsan et iusto odio dignissim qui blandit praesent luptatum zzril elenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit lorem dolo raesentum vestibulum molestie lacus. Aenean nonummy.</p>
               </div>
             </div>
-          </article>
-          <article class="span4 fright">
-            <div class="inner-block ident-left-1">
-              <h3 class="title"> <span>Liste des points clé</span> </h3>
-              <h4>Sous titre</h4>
-              <ul class="list-style-2">
-                <li class="check-list-2"><a href="#">Point clé 1</a></li>
-                <li class="check-list-2"><a href="#">Point clé </a></li>
-                <li class="check-list-2"><a href="#">Point clé </a></li>
-                <li class="check-list-2"><a href="#">Point clé </a></li>
-                <li class="check-list-2"><a href="#">Point clé </a></li>
-              </ul>
-            </div>
-          </article>
+-->
+<!--
+            <table>
+              <tr>
+                <th>Propriétés</th>
+                <th>Additifs</th>
+                <th>Traitement<br>PROTEA P2</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+            </table>
+-->
+              <div id="3pricelist">
+                <div class="price-table price-table-three">
+                  <div class="price-column  price-column-first">
+                    <h4>Propriétés</h4>
+                    <ul>
+                      <li>Qualification ISO 9002</li>
+                      <li>Nettoie, lubrifie les injecteurs</li>
+                      <li>Nettoie, lubrifie la pompe d’injection</li>
+                      <li>Nettoie, lubrifie les hauts de soupapes</li>
+                      <li>Nettoie lubrifie les chambres de combustion, hauts de cylindres</li>
+                      <li>Nettoie le circuit d’alimentation</li>
+                      <li>Evite les trous à l’accélération</li>
+                      <li>Facilite les démarrages à froid</li>
+                      <li>Améliore les performances du moteur</li>
+                      <li>Diminue les cliquetis du moteur</li>
+                      <li>Stabilise le ralenti</li>
+                      <li>Supprime les calamines</li>
+                      <li>Elimine l’eau de condensation</li>
+                      <li>Evite le développement des bactéries</li>
+                      <li>Evite les corrosions</li>
+                      <li>Evite les corrosions marines</li>
+                      <li>Protège contre la rouille</li>
+                      <li>Réduit la consommation de carburant</li>
+                      <li>Augmente l’indice de cétane</li>
+                      <li>Diminue les émanations de fumée d’échappement</li>
+                      <li>Compatible pots catalytiques, EGR</li>
+                      <li>Dosage en produit actifs 180 PPM</li>
+                      <li>Augmente la durée de vie du moteur et du pot d’échappement</li>
+                    </ul>
+                  </div>
+                  <div class="price-column price-column-even">
+                    <h4>Additifs</h4>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                    <div class="price-column">
+                      <ul>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                        <li><i class="icon-remove"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="price-column price-column-last price-column-featured">
+                    <h4>Traitement<br>PROTEA P2</h4>
+                    <ul>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                        <li><i class="icon-ok"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
           <!-- Info Box -->
 <!--
           <div class="span12"> <a href="#" id="callout"> <strong>Found out why everyone is talking about the <span>Foscor Theme</span></strong> <span>Signup Today!</span> </a> </div>
@@ -232,7 +624,7 @@
       <div class="container">
         <div class="row">
           <div class="span12">
-            <h2 class="text-center">Ce que disent nos clients</h2>
+            <h2 class="text-center">Nos clients témoignent de l'rfficacité de nos traitements PROTEA P2</h2>
           </div>
           <div class="span4">
             <blockquote class="black">
@@ -259,6 +651,7 @@
             <h3 class="text-center">D'autres clients témoignent</h3>
           </div>
           <!-- Start ticker markup code-->
+<!--
           <div class="span12 modern-ticker">
             <div class="mt-news">
               <ul>
@@ -285,6 +678,7 @@
               <div class="mt-next"><i class="icon-2x icon-chevron-sign-right"></i></div>
             </div>
           </div>
+-->
           <!-- End ticker markup code -->
         </div>
       </div>
@@ -446,7 +840,7 @@
 
 <!--[if lt IE 9]>
   <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->  <script type="text/javascript" src="assets/js/jquery.modern-ticker.min.js"></script>
+<![endif]-->  <script type="text/javascript" src="assets/img/jquery.modern-ticker.min.js"></script>
   <!-- Start ticker initialization code -->
   <script type="text/javascript">
     $(".modern-ticker").modernTicker({
@@ -457,5 +851,27 @@
     });
   </script>
   <!-- End ticker initialization code -->
+  <script>
+    var chartData = [
+        {
+          value : 10,
+          color: "#D97041"
+        },
+        {
+          value : 10,
+          color: "#C7604C"
+        },
+        {
+          value : 100,
+          color: "#21323D"
+        },
+        {
+          value : 30,
+          color: "#9D9B7F"
+        }
+      ];
+    var myPolarArea = new Chart(document.getElementById("canvas").getContext("2d")).PolarArea(chartData);
+  </script>
+
 </body>
 </html>
