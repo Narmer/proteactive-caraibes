@@ -83,26 +83,23 @@
           <!-- Naviation -->
           <div class="nav-collapse nav-collapse_ collapse">
             <ul class="nav sf-menu clearfix">
-              <li class="sub-menu active"><a href="#">Notre solution</a>
+              <li class="sub-menu active"><a href="#">Nos solutions</a>
                 <ul>
-                  <li><a href="./protea.html">Le Protea P2</a>
-                    <ul>
-                      <li><a href="./traitement-diesel-p550.html">Traitement Diesel P550</a></li>
-                      <li><a href="./traitement-fuel-lourd-p455.html">Traitement fuel lourd</a></li>
-                      <li><a href="./nettoyant-moteur-soupapes-haute-performance-p260.html">Traitement P260</a></li>
-                      <li><a href="./traitement-essence-p231.html">Traitement P231</a></li>
-                      <li><a href="./traitement-cuve-stockage-stock-cleaner.html">Stock Cleaner</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="./ecologie.html">Engagement E/S</a></li>
-                  <li><a href="./certifications.html">Nos certifications</a></li>
-                  <li><a href="./etudes-de-cas.html">Études de cas</a></li>
+                  <li><a href="./protea.html">Traitements Protea P2</a></li>
+                  <li><a href="./traitement-diesel-p550.html">P550, pour Diesel</a></li>
+                  <li><a href="./traitement-fuel-lourd-p455.html">P455, pour fuel lourd</a></li>
+                  <li><a href="./nettoyant-moteur-soupapes-haute-performance-p260.html">P260, pour huile moteur</a></li>
+                  <li><a href="./traitement-essence-p231.html">P231, pour essence</a></li>
+                  <li><a href="./traitement-cuve-stockage-stock-cleaner.html">Stock Cleaner</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a href="#">À propos</a>
                 <ul>
                   <li><a href="./qui-sommes-nous.html">Qui sommes nous</a></li>
                   <li><a href="./references.html">Références / Partenaires</a></li>
+                  <li><a href="./certifications.html">Nos certifications</a></li>
+                  <li><a href="./etudes-de-cas.html">Études de cas</a></li>
+<!--                   <li><a href="./engagement.html">Nos engagements</a></li> -->
                   <li><a href="./presse.html">Presse</a></li>
                 </ul>
               </li>
@@ -329,95 +326,4 @@
 <!--[if lt IE 9]>
   <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]--></body>
-</html>ry.mobilemenu.js"></script>
-<script type="text/javascript" src="./assets/js/jquery.cookie.js"></script>
-<!-- FlexSlider -->
-<script type="text/javascript" src="./assets/js/jquery.flexslider.js"></script>
-<!-- Camera Slider  -->
-<script type="text/javascript" src="./assets/js/camera.js"></script>
-<script>
-   $(document).ready(function(){
-    jQuery('.camera_wrap').camera();
-  });
-</script>
-<!-- Bootstrap jquery's  -->
-<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
-<!-- Accordion -->
-<script type="text/javascript"  src="./assets/js/accordion.js"></script>
-<!-- Tweets  -->
-<script type="text/javascript" src="./assets/js/jquery.tweet.js"></script>
-<script type='text/javascript'>
-  jQuery(function($){
-    $("#ticker").tweet({
-      username: "lereca1", /*Enter your Twitter username inside quotes */
-      page: 1, /*How many tweets to show at a time, You need to increase #ticker height if you increased this value*/
-      avatar_size: null, /*If you want to show your twitter avatar, just change null to avatar size you needed eg: 32, 50, 80 etc..*/
-      count: 10, /*Total counts of tweets. */
-      loading_text: "Bringing latest tweets..." /*Loading text*/
-     }).bind("loaded", function() {
-       var ul = $(this).find(".tweet_list");
-       var ticker = function() {
-         setTimeout(function() {
-           var top = ul.position().top;
-           var h = ul.height();
-           var incr = (h / ul.children().length);
-           var newTop = top - incr;
-           if (h + newTop <= 0) newTop = 0;
-           ul.animate( {top: newTop}, 500 ); /*Speed of Scrolling*/
-           ticker();
-          }, 5000); /*Delay of changing tweet*/
-        };
-      ticker();
-    });
-  });
-</script>
-<!-- Equal Heights  -->
-<script type="text/javascript" src="./assets/js/jquery.equalheights.js"></script>
-<script>
-  $(window).load(function() {
-    jQuery(".maxheight").equalHeights();
-  })
-</script>
-<!-- Elastislider  -->
-<script type="text/javascript" src="./assets/js/jquery.elastislide.js"></script>
-<script>
-  jQuery("#carousel-blog").elastislide({
-    imageW    : 270,
-    minItems  : 1,
-    speed   : 600,
-    easing    : "easeOutQuart",
-    margin    : 30,
-    border    : 0,
-    onClick   : function() {}
-  });</script>
-<!-- Pretty photo  -->
-<script type="text/javascript" src="./assets/js/jquery.prettyphoto.js"></script>
-<!--[if (gt IE 9)|!(IE)]><!-->
-<script type="text/javascript" src="./assets/js/jquery.mobile.customized.min.js"></script>
-<!-- Sticky  -->
-<script type="text/javascript" src="./assets/js/sticky.js"></script>
-<script src="./assets/js/modernizr.custom.js"></script>
-<!-- Rotator  -->
-<script src="./assets/js/jquery.rotator.js"></script>
-<script>
-  $( function() {
-    $( '#cbp-qtrotator' ).cbpQTRotator();
-  } );
-</script>
-<script type="text/javascript" src="./assets/js/custom.js"></script>
-
-<!--[if lt IE 9]>
-  <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->  <script type="text/javascript" src="assets/img/jquery.modern-ticker.min.js"></script>
-  <!-- Start ticker initialization code -->
-  <script type="text/javascript">
-    $(".modern-ticker").modernTicker({
-      effect: "fade",
-      displayTime: 5000,
-      transitionTime: 600,
-      autoplay: true
-    });
-  </script>
-  <!-- End ticker initialization code -->
-</body>
 </html>
