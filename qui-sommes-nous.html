@@ -252,22 +252,15 @@
             <article class="span8">
               <h3 class="title"> <span>Comment se forment les bactéries dans les carburants ?</span> </h3>
               <div class="block-indent-1">
-                <a data-toggle="modal" href="#myModal"><figure class="img-polaroid"><img src="assets/img/schema-formation-bacteries-carburant-thumbnail.jpg" alt=""></figure></a>
-                <!-- Modal -->
-                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h4 class="modal-title">Formation des bactéries dans les carburants</h4>
-                        </div>
-                        <div class="modal-body">
-                          <img class="text-center" src="assets/img/schema-formation-bacteries-carburant.jpg" alt="">
-                        </div>
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
-                <div class="extra-wrap">
+                <figure class="featured-thumbnail span3">
+                  <div class="img-border portfolio-overlay">
+                    <div class="img-opacity"><img src="assets/img/schema-formation-bacteries-carburant-thumbnail.jpg" alt=""></div>
+                    <div class="portfolio-overlay-content">
+                    <span class="zoom-effect"><a href="assets/img/schema-formation-bacteries-carburant.jpg" class="prettyPhoto"></a></span> </div>
+                  </div>
+                </figure>
+
+                <div class="extra-wrap span4">
                 <p>Les écarts de température dus aux <strong>variations climatiques génèrent de la condensation</strong> provenant de l'eau contenue dans l'air ambiant ou dissoute dans le carburant.<br>Cette condensation se transforme en <strong>eau qui se dépose au fond des réservoirs et cuves de stockage</strong> et va permettre aux <strong>bactéries de se développer</strong>.</p>
                 <p><strong><a href="./protea.html">Nos traitements éliminent l'eau et les bactéries</a></strong> se développant dans les réservoirs et cuves de stockage de carburant. Utilisés en préventif, <strong>les traitements PROTEA P2 empêchent toute formation d'eau, de bactéries, de moisissures et de paraffines</strong>.</p>
                 </div>
@@ -352,19 +345,15 @@
 </footer>
   </div>
   <!-- Jquery Starts  -->
-<!-- <script type="text/javascript" src="./assets/js/jquery.js"></script> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="./assets/js/jquery.easing.1.3.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- <script type="text/javascript" src="./assets/js/application-1.min.js"></script> -->
+<script type="text/javascript" src="./assets/js/jquery.easing.1.3.js"></script>
 <!-- Superfish  -->
-<!-- <script type="text/javascript" src="./assets/js/superfish.js"></script> -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/superfish/1.7.3/superfish.min.js"></script> -->
-<!-- <script type="text/javascript" src="./assets/js/jquery.mobilemenu.js"></script> -->
-<!-- <script type="text/javascript" src="./assets/js/jquery.cookie.js"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="./assets/js/superfish.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.mobilemenu.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.cookie.js"></script>
 <!-- FlexSlider -->
 <script type="text/javascript" src="./assets/js/jquery.flexslider.min.js"></script>
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.1/jquery.flexslider-min.js"></script> -->
 <!-- Camera Slider  -->
 <script type="text/javascript" src="./assets/js/camera.min.js"></script>
 <script>
@@ -372,12 +361,13 @@
     jQuery('.camera_wrap').camera();
   });
 </script>
+<!-- <script type="text/javascript" src="./assets/js/application-2.min.js"></script> -->
 <!-- Bootstrap jquery's  -->
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 <!-- Accordion -->
 <script type="text/javascript" src="./assets/js/accordion.min.js"></script>
 <!-- Equal Heights  -->
-<script type="text/javascript" src="./assets/js/jquery.equalheights.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.equalheights.js"></script>
 <script>
   $(window).load(function() {
     jQuery(".maxheight").equalHeights();
@@ -385,7 +375,7 @@
 </script>
 <!--
 <!-- Elastislider  -->
-<script type="text/javascript" src="./assets/js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.elastislide.min.js"></script>
 <script>
   jQuery("#carousel-blog").elastislide({
     imageW    : 270,
@@ -398,14 +388,14 @@
   });
 </script>
 <!-- Pretty photo  -->
-<!-- <script type="text/javascript" src="./assets/js/jquery.prettyphoto.js"></script> -->
+<script type="text/javascript" src="./assets/js/jquery.prettyphoto.min.js"></script>
 <!--[if (gt IE 9)|!(IE)]><!-->
 <script type="text/javascript" src="./assets/js/jquery.mobile.customized.min.js"></script>
 <!-- Sticky  -->
-<script type="text/javascript" src="./assets/js/sticky.js"></script>
-<script src="./assets/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="./assets/js/sticky.min.js"></script>
+<script src="./assets/js/modernizr.custom.min.js"></script>
 <!-- Rotator  -->
-<script src="./assets/js/jquery.rotator.js"></script>
+<script src="./assets/js/jquery.rotator.min.js"></script>
 <script>
   $( function() {
     $( '#cbp-qtrotator' ).cbpQTRotator();
