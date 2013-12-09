@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr" manifest="proteactive.manifest">
 <head>
-<meta charset="utf-8"><title>Intervention curative sur le bateau Commandant Mortenol</title>
+<meta charset="utf-8"><title>Intervention curative à Centrale Diesel Export</title>
 <!-- Fav and touch icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114-precomposed.png">
@@ -53,8 +53,15 @@
     <!-- Social Icons -->
     <div class="socials">
   <ul class="socialmedia-widget">
+<<<<<<< HEAD
 <!--     <li><a href="#" class="facebook" title="Visitez notre page Facebook" target="_blank">Visitez notre page Facebook</a></li> -->
     <li><a href="https://twitter.com/proteactive" class="twitter" title="Visitez notre compte twitter" target="_blank">Visitez notre compte twitter</a></li>
+=======
+<!--
+    <li><a href="#" class="facebook" title="Visitez notre page Facebook" target="_blank">Visitez notre page Facebook</a></li>
+    <li><a href="#" class="twitter" title="Visitez notre compte twitter" target="_blank">Visitez notre compte twitter</a></li>
+-->
+>>>>>>> refs/heads/feature-banners
 <!--     <li><a href="#" class="googleplus" title="Visitez notre page google+" target="_blank">Visitez notre page google+</a></li> -->
 <!--     <li><a href="#" class="pinterest"></a></li> -->
 <!--     <li><a href="#" class="linkedin"></a></li> -->
@@ -113,17 +120,23 @@
     <!-- Slider -->
     <section class="fx-slider">
       <div class="fx-caption">
-        <h1 class="camera-caption1">Intervention curative sur le bateau Commandant Mortenol</h1><br>
+        <h1 class="camera-caption1">Intervention curative à Centrale Diesel Export</h1><br>
 <!--         <span class="camera-caption2">sous titre</span> -->
       </div>
       <div class="flexslider">
         <ul class="slides">
+<<<<<<< HEAD
+          <li><img src="../assets/img/slides/1.png" alt=""></li>
+<li><img src="../assets/img/slides/2.png" alt=""></li>
+<li><img src="../assets/img/slides/3.png" alt=""></li>
+=======
           <li><img src="../assets/img/slides/small-banner-bateau.jpg" alt="Bateau privé"></li>
 <li><img src="../assets/img/slides/small-banner-centrale1.jpg" alt="Centrale thermique"></li>
 <li><img src="../assets/img/slides/small-banner-jetski.jpg" alt="Jetski"></li>
 <li><img src="../assets/img/slides/small-banner-moto.jpg" alt="Moto"></li>
 <li><img src="../assets/img/slides/small-banner-yachts.jpg" alt="Yachts dans une marina"></li>
 <li><img src="../assets/img/slides/small-banner-tondeuse.jpg" alt="Tondeuse à gazon"></li>
+>>>>>>> refs/heads/feature-banners
         </ul>
       </div>
     </section>
@@ -136,61 +149,44 @@
             <div class="slider">
               <div class="flexslider flexslider-single-port">
                 <ul class="slides">
-                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol.jpg"><img src="../assets/img/etudes/bateau-commandant-mortenol.jpg"></li>
-                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-vaccination.jpg"><img src="../assets/img/etudes/bateau-commandant-mortenol-vaccination.jpg"></li>
-                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-remplissage.jpg"><img src="../assets/img/etudes/bateau-commandant-mortenol-remplissage.jpg"></li>
-                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-depart.jpg"><img src="../assets/img/etudes/bateau-commandant-mortenol-depart.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol.jpg"><img src="../assets/img/etudes/cde-pompe-avant-traitement.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-vaccination.jpg"><img src="../assets/img/etudes/cde-pompe-apres-traitement.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-remplissage.jpg"><img src="../assets/img/etudes/cde-clapet-propre.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-depart.jpg"><img src="../assets/img/etudes/cde-galet-ressort-propre.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-depart.jpg"><img src="../assets/img/etudes/cde-cremaillere-propre.jpg"></li>
+                  <li data-thumb="../assets/img/etudes/bateau-commandant-mortenol-depart.jpg"><img src="../assets/img/etudes/cde-piston-plongeur-propre.jpg"></li>
                 </ul>
               </div>
             </div>
             <h2 class="title"><span>La société</span></h2>
-            <p>Le bateau Commandant Mortenol est affrété par la <abbr title="Sablière Guadeloupe">SAGUA</abbr> consiste à extraire du sable marin au large de la Guadeloupe.<br>Le bateau est équipé de 7 moteurs CATERPILLAR :<br>- 2 moteurs de propulsion type V16 35 16 puissances 1052 CV,<br>- 2 moteurs 34 12,<br>- 2 moteurs 34 08 et<br>- 1 moteur 33 04.</p>
-            <p>Le bateau est touché par les problèmes de bactéries dans le carburant qui perturbent le bon fonctionnement de son activité</p>
-            <h2 class="title"><span>Ils témoignent</span></h2>
-            <ul class="tab-menu">
-              <li><a href="#tab1">Mr Willy BOCAGE</a></li>
-            </ul>
-            <div class="tab-container">
-              <div id="tab1" class="tab-content-1">
-                <div class="extra-wrap">
-                  <blockquote>
-                    <p>Depuis l'utilisation de PROTEA P350 et P260, nous avons constaté :<br>
-                    - une forte diminution des bactéries.<br>
-                    - une importante baisse de la consommation (plus de 10%).<br>
-                    - une diminution des fumées.<br>
-                    - un meilleur rendement des moteurs.<br>
-                    - une durée de vie doublée des filtres de gasoil.</p>
-                    <p>Nous en sommes très satisfait.</p>
-                    <small>Mr <cite>Willy BOCAGE</cite> Directeur Technique du bateau</small>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
+            <p>Centrale Diesel Export est une usine de production électrique privée. Elle possède 4 moteurs SEMT Pielstick PA6 dont 3 en fonction et 1 en réserve. Le niveau de maintenance et l'état de propreté de l’ensemble du site est remarquablement professionnel. L'usine est en production depuis 1 an (7800 heures).</p>
+            <p>Le test est effectué sur la pompe bloquée à 7800 heures de fonctionnement, dont la crémaillère est gommée.</p>
           </div>
           <aside class="span4">
             <h3 class="title"> <span>Infos Générales</span> </h3>
             <ul class="list-1 bot-30">
-              <li><span>Client:</span><em>Commandant Mortenol</em></li>
-              <li><span>Type:</span><em>Camion Renault</em></li>
+              <li><span>Date:</span><em>02 Juin 2001</em></li>
+              <li><span>Client:</span><em>Centrale Diesel Export</em></li>
+              <li><span>Type:</span><em>Usine de production électrique</em></li>
               <li><span>Lieu:</span><em>Guadeloupe, Jarry</em></li>
             </ul>
+            <h3 class="title"> <span>La problématique</span> </h3>
+            <p>Après 7800 heures de fonctionnement, la crémaillère de la pompe est fortement gommée. La pompe est impossible à démonter.</p>
             <h3 class="title"> <span>La solution apportée</span> </h3>
-            <p>Proteactive Caraïbes va effectué un traitement curatif au PROTEA P350 Diesel et un Flushing P260 pour l'huile.</p>
+            <p>La pompe va être partiellement immergée dans du PROTEA P2 (traitement statique sans circulation de produit) afin d'éliminer toutes les traces de gomme.</p>
             <h3 class="title"> <span>La procédure</span> </h3>
             <ol class="list-style-1">
-              <li>Mise en place de la vaccination et remplissage du réservoir.</li>
-              <li>Remplissage du réservoir côté tribord avec 22 litres de PROTEA.</li>
-              <li>Remplissage côté bâbord du réservoir avec le fût de 200 litres de PROTEA P350.</li>
-              <li>Départ pour le large de Petit-Havre</li>
+              <li>Immersion partielle dans du PROTEA P2 Pur pendant 5 heures (Pompe non-démontée).</li>
+              <li>Démontage de la pompe.</li>
+              <li>Immersion du piston plongeur seul dans du PROTEA P2.</li>
             </ol>
             <h3 class="title"> <span>Les bénéfices pour le client</span> </h3>
             <ul class="list-style-2">
-              <li><i class="icon-ok text-error"></i> Forte diminution des bactéries,</li>
-              <li><i class="icon-ok text-error"></i> Importante baisse de la consommation (plus de 10%),</li>
-              <li><i class="icon-ok text-error"></i> Diminution des fumées,</li>
-              <li><i class="icon-ok text-error"></i> Meilleur rendement des moteurs,</li>
-              <li><i class="icon-ok text-error"></i> Durée de vie doublée des filtres de gasoil.</li>
+              <li><i class="icon-ok text-error"></i> Élimination totale des gommes et vernis sur la pompe.</li>
+              <li><i class="icon-ok text-error"></i> La pompe peut à nouveau être démontée facilement.</li>
+              <li><i class="icon-ok text-error"></i> La pompe est entièrement nettoyée.</li>
             </ul>
+            <p>Après immersion, le démontage de la pompe est effectué sans aucune difficulté.<br>Le clapet est entièrement nettoyé. Le galet et le ressort de rappel sont à nouveau propre et l'entraînement de la crémaillère est aussi nettoyé.<br>Le piston plongeure présente quelques traces de vernis.</p><p>Le vernis restant sur le piston plongeur est supprimé quand on l’immerge seul dans du PROTEA P2 et non pas par capillarité à l’intérieur de la pompe</p>
           </aside>
         </div>
       </div>
@@ -472,6 +468,6 @@
 <![endif]--><!-- FlexSlider -->
 <script type="text/javascript" src="../assets/js/jquery.flexslider.js"></script>
 <!-- Tabs -->
-<script type="text/javascript" src="../assets/js/tabs.min.js"></script>
+<script type="text/javascript" src="../assets/js/tabs.js"></script>
 </body>
 </html>
