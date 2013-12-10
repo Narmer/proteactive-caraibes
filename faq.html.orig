@@ -197,16 +197,24 @@
                     <li><strong>Pour les moteurs Diesel (PROTEA P550) :</strong></li>
                     <li>Pour votre première utilisation, vous êtes au <strong>dosage curatif de 1 litre de PROTEA P550 pour 150 litres de Diesel</strong>.</li>
                     <li>Après la première utilisation, vous êtes au <strong>dosage préventif de 1 litre de PROTEA P2 pour 320 litres de Diesel</strong>.</li>
+<<<<<<< HEAD
+<!--                     <li>Vous pouvez consulter notre <a href="traitement-diesel-p550.html"><strong>tableau de dosage pour le traitement Diesel</strong></a></li> -->
+=======
                     <li>Vous pouvez consulter le tableau de dosage du traitement Diesel sur la page produit.</li>
+>>>>>>> refs/heads/feature-faq-content
                   </ul>
                   <ul>
                     <li><strong>Pour les moteurs à essence (PROTEA P231) :</strong></li>
                     <li>Le traitement PROTEA P231 s'utilise uniquement en curatif au dosage de <strong>1 litre de PROTEA P231 pour 320 litres d'essence</strong>.</li>
+<<<<<<< HEAD
+<!--                     <li>Vous pouvez consulter notre <a href="traitement-essence-p231.html#proportioning-table"><strong>tableau de dosage pour le traitement essence</strong></a></li> -->
+=======
                     <li>Vous pouvez consulter le tableau de dosage du traitement Essence sur la page produit.</li>
                   </ul>
                   <ul>
                     <li><strong>Pour les huiles (PROTEA P260) :</strong></li>
                     <li>Le dosage est de 1 litre de PROTEA P260 pour 10 litres d'huile.</li>
+>>>>>>> refs/heads/feature-faq-content
                   </ul>
                   <p>Nos traitements sont <a href="#" data-toggle="tooltip" title="L'effet perdure dans le temps, même après que sa cause a disparu"><b>rémanents</b></a>, ils protègent durablement les moteurs, réservoirs, cuves, etc.</p>
                   <h4><strong>Important : <span class="text-error">Il n'est pas nécessaire d'utiliser PROTEA P2 à chaque plein de carburant, vous pouvez traiter tous les 3 pleins</span></strong>.</h4>
@@ -347,7 +355,11 @@
                     <li><strong>Pour les moteurs Diesel (PROTEA P550) :</strong></li>
                     <li>Pour votre première utilisation, vous êtes au <strong>dosage curatif de 1 litre de PROTEA P550 pour 150 litres de Diesel</strong>.</li>
                     <li>Après la première utilisation, vous êtes au <strong>dosage préventif de 1 litre de PROTEA P2 pour 320 litres de Diesel</strong>.</li>
+<<<<<<< HEAD
+                    <li>Vous pouvez consulter notre <a href="traitement-diesel-p550.html#proportioning-table" data-toggle="tooltip" title=""><strong>tableau de dosage pour le traitement Diesel</strong></a></li>
+=======
                     <li>Vous pouvez consulter le tableau de dosage du traitement Diesel sur la page produit.</li>
+>>>>>>> refs/heads/feature-faq-content
                   </ul>
                   <ul>
                     <li><strong>Pour les moteurs à essence (PROTEA P231) :</strong></li>
