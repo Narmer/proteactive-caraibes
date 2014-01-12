@@ -1,6 +1,6 @@
 CACHE MANIFEST
  
-# Version 0.1
+# Version 0.2
  
 index.html
 certifications.html
@@ -64,9 +64,19 @@ assets/img/etudes/cde-piston-plongeur-propre.jpg
 assets/img/etudes/cde-pompe-apres-traitement.jpg
 assets/img/etudes/cde-pompe-avant-traitement.jpg
 assets/img/etudes/centrale-edf-marie-galante.jpg
+assets/img/etudes/edf-marie-galante-opacimetries-1.jpg
+assets/img/etudes/edf-marie-galante-opacimetries-2.jpg
+assets/img/etudes/edf-marie-galante-opacimetries-3.jpg
+assets/img/etudes/edf-marie-galante-opacimetries-4.jpg
 assets/img/etudes/edf-degrad-des-cannes-apres.jpg
 assets/img/etudes/edf-degrad-des-cannes-avant.jpg
 assets/img/etudes/edf-guyane-centrale-regina.jpg
+assets/img/etudes/edf-guyane-opacimetries-avec-additif.jpg
+assets/img/etudes/edf-guyane-opacimetries-G1-G3.jpg
+assets/img/etudes/edf-guyane-opacimetries-G1.jpg
+assets/img/etudes/edf-guyane-opacimetries-G2.jpg
+assets/img/etudes/edf-guyane-opacimetries-G3.jpg
+assets/img/etudes/edf-guyane-opacimetries-sans-additif.jpg
 assets/img/etudes/espace-service-remplissage-gazole.jpg
 assets/img/etudes/espace-service-remplissage-reservoir-gazole.jpg
 assets/img/etudes/espace-service-remplissage-reservoir-huile.jpg
@@ -131,7 +141,6 @@ assets/img/camera-loader.gif
 assets/img/eau-bacteries-gazole.jpg
 assets/img/footer-line.png
 assets/img/indicator.png
-assets/img/list_marker.png
 assets/img/logo-actioil.jpg
 assets/img/logo.jpg
 assets/img/moteur-bateau.jpg
