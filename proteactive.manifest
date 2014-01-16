@@ -1,6 +1,6 @@
 CACHE MANIFEST
  
-# Version 0.4
+# Version 0.5
  
 index.html
 certifications.html
@@ -65,9 +65,10 @@ assets/img/etudes/cde-pompe-apres-traitement.jpg
 assets/img/etudes/cde-pompe-avant-traitement.jpg
 assets/img/etudes/centrale-edf-marie-galante.jpg
 assets/img/etudes/edf-marie-galante-opacimetries-1.jpg
-assets/img/etudes/edf-marie-galante-opacimetries-2.jpg
-assets/img/etudes/edf-marie-galante-opacimetries-3.jpg
-assets/img/etudes/edf-marie-galante-opacimetries-4.jpg
+assets/img/etudes/edf-marie-galante-constat-eau-avant.jpg
+assets/img/etudes/edf-marie-galante-purge.jpg
+assets/img/etudes/edf-marie-galante-purge2.jpg
+assets/img/etudes/edf-marie-galante-elimination-bactéries.jpg
 assets/img/etudes/edf-degrad-des-cannes-apres.jpg
 assets/img/etudes/edf-degrad-des-cannes-avant.jpg
 assets/img/etudes/edf-guyane-centrale-regina.jpg
