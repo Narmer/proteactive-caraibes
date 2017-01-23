@@ -1,0 +1,45 @@
+doctype html
+html(lang="fr" manifest="proteactive.manifest")
+  head
+    include includes/_head.pug
+    title Traitements et solution globale aux problèmes des carburants - PROTEA P2
+  body
+    //-include includes/_scripts-body.pug
+    .main
+      .div-content
+        //- Header
+        header.header_top
+          .container
+            //- Contact Details -->
+            #contact-details
+              ul
+                li
+                  i.icon-envelope
+                  a(href="mailto:contact@proteactive-caraibes.com" title="Cliquez pour nous envoyer un mail") contact@proteactive-caraibes.com
+                li
+                  i.icon-phone
+                  //-(+590) 590 218 888
+            include includes/_social-media-widget.pug
+            .clear
+        //- Navigation
+        include includes/_nav.pug
+
+    //- Content
+
+    //-intro=======-->
+    //-include includes/intro.pug
+    //- second=======-->
+    include includes/_second.pug
+    //- third=======-->
+    //-include includes/third.pug
+    //- Fifth=======-->
+    //-include includes/fifth.pug
+    .spacer-60
+    //- Footer
+    include includes/_footer.pug
+
+    include includes/_scripts.pug
+
+    <!--[if lt IE 9]>
+      script(type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js")
+    <![endif]-->
