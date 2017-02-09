@@ -1,0 +1,9 @@
+.language-select {
+  float: left;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.language-select ul li a:hover {
+  background-color: #999;
+  background-image: none;
+}
