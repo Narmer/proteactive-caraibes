@@ -1,0 +1,28 @@
+.languages {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.languages ul {
+  margin: 0 0 3px;
+}
+
+.languages li:first-child {
+  border: medium none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.languages li {
+  border-left: 1px solid #eaeaea;
+  display: inline;
+  margin-left: 10px;
+  padding-left: 10px
+}
+
+.languages a {
+  color: #666;
+  line-height: 18px
+}
