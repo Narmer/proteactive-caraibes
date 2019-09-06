@@ -137,7 +137,7 @@
 <nav class="sidebar lime" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="#" title="Brand Name" class="logo"><svg width="120" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+    <a href="#" title="Brand Name" class="textLogo selectable sourceSans"><p class="bold"><span class="text-black">Protea</span><span class="">P2</span></p></a>
     <ul class="mainMenu uppercase">
       <li><a href="#">Nos Solutions</a></li>
       <li><a href="#">À Propos</a></li>
@@ -288,7 +288,7 @@
   </nav>
 </section>
 
-<!-- Slide #49 -->
+<!-- Features -->
 <section class="slide fade whiteSlide">
   <div class="content">
     <div class="container">
@@ -333,7 +333,211 @@
   <div class="background"></div>
 </section>
 
-<!-- Slide #74 -->
+<style>
+
+/* CUSTOM ANIMATION */
+.slider[data-slider-id="customAnimation"] li {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+   /* before selected */
+   opacity: 0;
+   z-index: 0;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+
+/* selected */
+.slider[data-slider-id="customAnimation"] li.selected {
+   opacity: 1;
+   z-index: 1;
+   -webkit-transform: translateX(0px);
+   transform: translateX(0px);
+}
+
+/* after been selected */
+.slider[data-slider-id="customAnimation"] li.hide {
+   opacity: 0;
+   -webkit-transform: translateX(50%);
+   transform: translateX(50%);
+}
+
+
+/* ignore */
+.box {
+   width: 100%;
+   height: 400px;
+}
+.space {
+  margin-top: 30px;
+}
+</style>
+
+<!-- Video -->
+<section class="slide whiteSlide">
+  <div class="content">
+    <div class="container">
+      <div class="wrap noSpaces">
+
+				<div class="fix-6-12 bottomBox">
+          <!-- slider -->
+          <ul class="slider autoHeight clickable ae-1" data-slider-id="customAnimation">
+            <li class="selected">
+            	<div class="videoThumbnail videoThumbnail-82 noShadow popupTrigger ae-6" data-popup-id="20">
+          			<img src="assets/img/video/stac-spanish.jpg" class="wide" alt="Thumbnail"/>
+        			</div>
+        		</li>
+            <li>
+            	<div class="videoThumbnail videoThumbnail-82 noShadow popupTrigger ae-6" data-popup-id="21">
+			          <img src="assets/img/video/stac-spanish.jpg" class="wide" alt="Thumbnail"/>
+			        </div>
+            </li>
+          </ul>
+
+          <!-- controller -->
+          <ul class="controller dots ae-2 space" data-slider-id="customAnimation">
+            <li class="dot selected"></li>
+            <li class="dot"></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+
+
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="20">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent">
+            <iframe width="560" height="315" src="https://youtube.com/embed/_qYS3mxEKeM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup autoplay" data-popup-id="21">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent">
+            <iframe width="560" height="315" src="https://youtube.com/embed/_qYS3mxEKeM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+/* CUSTOM HEIGHT */
+.slider[data-slider-id="customHeight"] li {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+   /* before selected */
+   opacity: 0;
+}
+
+/* selected */
+.slider[data-slider-id="customHeight"] li.selected { opacity: 1; }
+
+/* arrows */
+.leftControl,
+.rightControl {
+   position: absolute;
+   top: 50%;
+   margin-top: -35px;
+   margin-left: -100px;
+   cursor: pointer;
+   font-size: 0;
+}
+
+.rightControl {
+   right: 0;
+   margin-right: -100px;
+}
+
+.leftControl svg,
+.rightControl svg {
+   width: 30px;
+   height: 70px;
+}
+
+@media screen and (max-width:1180px) {
+  .leftControl,
+  .rightControl {
+     display:none;
+  }
+}
+</style>
+
+<!-- Slide #80 -->
+<section class="slide whiteSlide" data-title="Custom Height with Arrows">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-8-12">
+
+          <div class="relative">
+            <!-- arrows -->
+            <div class="leftControl ae-2 fromLeft" data-slider-id="customHeight" data-slider-action="prev">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
+            </div>
+            <div class="rightControl ae-2 fromRight" data-slider-id="customHeight" data-slider-action="next">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
+            </div>
+
+            <!-- slider -->
+            <ul class="slider autoHeight clickable ae-1" data-slider-id="customHeight">
+              <li class="selected">
+              	<div class="quote-80 ae-1">“</div>
+			          <div class="fix-8-12 ae-2"><p class="hero">Depuis l'utilisation du PROTEA P2 nous observons une augmentation du rendement des moteurs avec une baisse considérable de notre consommation.</p></div>
+			          <div class="ae-3"><p class="small opaque"><strong>M. Harry ARTIS</strong><br><span class="opacity-8">Directeur d'exploitation de la CFG</span></p></div>
+              </li>
+              <li>
+              	<div class="quote-80 ae-1">“</div>
+			          <div class="fix-8-12 ae-2"><p class="hero">…j'ai pu constater que ce produit permettait effectivement au four d'avoir un temps de chauffe réduit. Je suis totalement satisfait de ce produit…</p></div>
+			          <div class="ae-3"><p class="small opaque"><strong>M. Max CLAIRICIA</strong><br><span class="opacity-8">Société Aux Délices de Régales</span></p></div>
+              </li>
+              <li>
+              	<div class="quote-80 ae-1">“</div>
+			          <div class="fix-8-12 ae-2"><p class="hero">J'ai constaté une amélioration du fonctionnement de mon process de production ainsi qu'une réduction sensible des rejets de fumées et une baisse significative de ma consommation.</p></div>
+			          <div class="ae-3"><p class="small opaque"><strong>M. Daniel COCO</strong><br><span class="opacity-8">Directeur de production de la société SOCARA</span></p></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Case studies -->
 <section class="slide fade whiteSlide">
   <div class="content">
     <div class="container">
@@ -341,7 +545,7 @@
 
         <div class="fix-10-12 toCenter">
           <h2 class="ae-1">Dernières études de cas</h2>
-          <div class="ae-2"><p>Proteactive Caraïbes livre des analyses détaillées de cas de figure chez ses clients.</p></div>
+          <div class="ae-2"><p>Proteactive Caraïbes livre des tests réalisés chez ses clients.</p></div>
         </div>
         <div class="fix-12-12">
           <ul class="grid grid-74 later equal left margin-top-5">
@@ -409,206 +613,7 @@
   <div class="background"></div>
 </section>
 
-<style>
 
-/* CUSTOM ANIMATION */
-.slider[data-slider-id="customAnimation"] li {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   display: block;
-   -webkit-transition: 0.5s;
-   transition: 0.5s;
-   /* before selected */
-   opacity: 0;
-   z-index: 0;
-   -webkit-transform: translateX(-50%);
-   transform: translateX(-50%);
-}
-
-/* selected */
-.slider[data-slider-id="customAnimation"] li.selected {
-   opacity: 1;
-   z-index: 1;
-   -webkit-transform: translateX(0px);
-   transform: translateX(0px);
-}
-
-/* after been selected */
-.slider[data-slider-id="customAnimation"] li.hide {
-   opacity: 0;
-   -webkit-transform: translateX(50%);
-   transform: translateX(50%);
-}
-
-
-/* ignore */
-.box {
-   width: 100%;
-   height: 400px;
-}
-.space {
-  margin-top: 30px;
-}
-</style>
-<!-- Slide #82 -->
-<section class="slide whiteSlide">
-  <div class="content">
-    <div class="container">
-      <div class="wrap noSpaces">
-
-				<div class="fix-6-12 bottomBox">
-          <!-- slider -->
-          <ul class="slider autoHeight clickable ae-1" data-slider-id="customAnimation">
-            <li class="selected">
-            	<div class="videoThumbnail videoThumbnail-82 noShadow popupTrigger ae-6" data-popup-id="20">
-          			<img src="assets/img/video/stac-spanish.jpg" class="wide" alt="Thumbnail"/>
-        			</div>
-        		</li>
-            <li>
-            	<div class="videoThumbnail videoThumbnail-82 noShadow popupTrigger ae-6" data-popup-id="21">
-			          <img src="assets/img/video/stac-spanish.jpg" class="wide" alt="Thumbnail"/>
-			        </div>
-            </li>
-          </ul>
-
-          <!-- controller -->
-          <ul class="controller dots ae-2 space" data-slider-id="customAnimation">
-            <li class="dot selected"></li>
-            <li class="dot"></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="background"></div>
-</section>
-
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="20">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe width="560" height="315" src="https://youtube.com/embed/_qYS3mxEKeM" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="popup autoplay" data-popup-id="21">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe width="560" height="315" src="https://youtube.com/embed/_qYS3mxEKeM" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-/* CUSTOM HEIGHT */
-.slider[data-slider-id="customHeight"] li {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   display: block;
-   -webkit-transition: 0.5s;
-   transition: 0.5s;
-   /* before selected */
-   opacity: 0;
-}
-
-/* selected */
-.slider[data-slider-id="customHeight"] li.selected { opacity: 1; }
-
-/* arrows */
-.leftControl,
-.rightControl {
-   position: absolute;
-   top: 50%;
-   margin-top: -35px;
-   margin-left: -100px;
-   cursor: pointer;
-   font-size: 0;
-}
-
-.rightControl {
-   right: 0;
-   margin-right: -100px;
-}
-
-.leftControl svg,
-.rightControl svg {
-   width: 30px;
-   height: 70px;
-}
-
-@media screen and (max-width:1180px) {
-  .leftControl,
-  .rightControl {
-     display:none;
-  }
-}
-</style>
-<!-- Slide #80 -->
-<section class="slide whiteSlide" data-title="Custom Height with Arrows">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-
-        <div class="fix-8-12">
-
-          <div class="relative">
-            <!-- arrows -->
-            <div class="leftControl ae-2 fromLeft" data-slider-id="customHeight" data-slider-action="prev">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-left"></use></svg>
-            </div>
-            <div class="rightControl ae-2 fromRight" data-slider-id="customHeight" data-slider-action="next">
-              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg>
-            </div>
-
-            <!-- slider -->
-            <ul class="slider autoHeight clickable ae-1" data-slider-id="customHeight">
-              <li class="selected">
-              	<div class="quote-80 ae-1">“</div>
-			          <div class="fix-8-12 ae-2"><p class="hero">Depuis l'utilisation du PROTEA P2 nous observons une augmentation du rendement des moteurs avec une baisse considérable de notre consommation.</p></div>
-			          <div class="ae-3"><p class="small opaque"><strong>M. Harry ARTIS</strong><br><span class="opacity-8">Directeur d'exploitation de la CFG</span></p></div>
-              </li>
-              <li>
-              	<div class="quote-80 ae-1">“</div>
-			          <div class="fix-8-12 ae-2"><p class="hero">…j'ai pu constater que ce produit permettait effectivement au four d'avoir un temps de chauffe réduit. Je suis totalement satisfait de ce produit…</p></div>
-			          <div class="ae-3"><p class="small opaque"><strong>M. Max CLAIRICIA</strong><br><span class="opacity-8">Société Aux Délices de Régales</span></p></div>
-              </li>
-              <li>
-              	<div class="quote-80 ae-1">“</div>
-			          <div class="fix-8-12 ae-2"><p class="hero">J'ai constaté une amélioration du fonctionnement de mon process de production ainsi qu'une réduction sensible des rejets de fumées et une baisse significative de ma consommation.</p></div>
-			          <div class="ae-3"><p class="small opaque"><strong>M. Daniel COCO</strong><br><span class="opacity-8">Directeur de production de la société SOCARA</span></p></div>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- Slide #68 -->
 <section class="slide fade whiteSlide">
