@@ -1,35 +1,36 @@
 <!doctype html>
-<html class="desktop ">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 
+
 		<!-- Page Title -->
 		<title>Protea P2</title>
 
-		<!-- Fonts and Material Icons -->
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css"/>
+<!-- Fonts and Material Icons -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css"/>
 
 
-		<!-- Styles -->
-		<link href="css/slides.css" rel="stylesheet" type="text/css">
+<!-- Styles -->
+<link href="css/slides.css" rel="stylesheet" type="text/css">
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
 
-		<!-- Custom Styles -->
-		<link href="css/custom.css" rel="stylesheet" type="text/css">
+<!-- Custom Styles -->
+<link href="css/custom.css" rel="stylesheet" type="text/css">
 
-		<!-- Scripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="js/plugins.js" type="text/javascript" name="plugins"></script>
-		<script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/plugins.js" type="text/javascript" name="plugins"></script>
+<script src="js/slides.js" type="text/javascript" name="main-scripts"></script>
 
-		<!-- Custom Scripts -->
-		<!--script src="js/custom.js" type="text/javascript" name="custom-scripts"></script-->
+<!-- Custom Scripts -->
+<!--script src="js/custom.js" type="text/javascript" name="custom-scripts"></script-->
 
-	</head>
-	<body class="slides scroll noPreload simplifiedMobile">
+</head>
+<body class="slides scroll noPreload simplifiedMobile stage-1" style="display: block;">
 
 
 <!-- SVG Library -->
@@ -102,61 +103,158 @@
 
 
 
-    <!-- Panel Top #01 -->
-    <nav class="panel top forceMobileView">
-      <div class="sections desktop">
-        <div class="left">
-        	<a href="#" title="Proteactive" class="textLogo selectable sourceSans"><p class="hero bold"><span class="text-blueGrey">Protea</span><span class="text-pink">P2</span></p></a>
-        </div>
-        <div class="center">
-          <ul class="menu">
-            <li><a href="#">Nos Solutions</a></li>
-            <li><a href="#">À Propos</a></li>
-            <li><a href="#">F.A.Q.</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="right"><span data-dropdown-id="language" class="button actionButton dropdownTrigger">FR</span></div>
-      </div>
-      <div class="sections compact hidden">
-        <div class="left"><a href="#" title="Brand Name" class="textLogo selectable sourceSans"><p class="hero bold"><span class="text-black">Protea</span><span class="text-lime">P2</span></p></a></div>
-    		<div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"></span></div>
-      </div>
-    </nav>
+<style>
+  .panel .menu { cursor:pointer;}
+  .panel  .menu.small li {
+    outline: none;
+    border-radius: 50px;
+    padding: 7px 17px;
+    will-change: background;
+    -webkit-transition:0.25s background;
+    transition:0.25s background;
+  }
+  .panel .sections .menu.small li:focus,
+  .panel .sections .menu.small li:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+  .dropdown.customDropdown { padding:10px 0;}
+  .dropdown.customDropdown li:not(.link),
+  .dropdown.customDropdown li.link a { font-size: 18px; padding: 8px 10px 8px 20px; cursor: pointer; display: block; text-align: left; }
+  .dropdown.customDropdown li:hover { background:rgba(0, 0, 0, 0.05);}
+  .dropdown-icon {
+    stroke: #fff;
+    width: 10px !important;
+    height: 10px !important;
+    margin-left: 4px;
+  }
+</style>
+<!-- Navigation -->
 
-    <!-- Language selector dropdown -->
-    <div class="dropdown translate top right" data-dropdown-id="language">
-      <ul>
-        <li data-switch-lang="en">English</li>
-        <li data-switch-lang="es">Español</li>
-        <li data-switch-lang="fr">Français</li>
+<nav class="panel top small fixed">
+  <div class="sections">
+    <div class="left">
+      <a href="/index.html" title="Brand Name" class="textLogo selectable sourceSans"><p class="hero bold"><span class="text-black">Protea</span><span class="text-lime">P2</span></p></a>
+    </div>
+    <div class="center">
+      <ul class="menu small sourceSans">
+        <li tabindex="0" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="nos-solutions-menu">Nos Solutions
+        <svg class="dropdown-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop-down"></use>
+          </svg>
+        </li>
+        <li tabindex="1" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="a-propos-menu">A Propos
+        <svg class="dropdown-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop-down"></use>
+          </svg>
+        </li>
+        <li tabindex="3" class=""><a href="/faq.html">F.A.Q.</a></li>
+        <li tabindex="4" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="tests-menu">
+          Tests
+          <svg class="dropdown-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop-down"></use>
+          </svg>
+        </li>
+        <li tabindex="5" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="boutique-menu">
+          Boutique
+          <svg class="dropdown-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop-down"></use>
+          </svg>
+        </li>
+        <li tabindex="6" class="dropdownTrigger" data-dropdown-hover="true" data-dropdown-id="international-menu">
+          International
+          <svg class="dropdown-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop-down"></use>
+          </svg>
+        </li>
       </ul>
     </div>
+    <div class="right"><span data-dropdown-id="language" class="button actionButton dropdownTrigger">EN</span></div>
+  </div>
+  <div class="sections compact hidden">
+    <div class="left"><a href="#" title="Brand Name" class="textLogo selectable sourceSans"><p class="hero bold"><span class="text-black">Protea</span><span class="text-lime">P2</span></p></a></div>
+    <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://designmodo.com/slides/app-v3/?slides%5B%5D=95&amp;whiteSlide%5B%5D=&amp;panel-top=22&amp;effect=scroll&amp;speed=&amp;animated=&amp;easing=&amp;horizontal=0&amp;smoothScroll=&amp;navigation=default&amp;navigation-position=&amp;navigation-style=&amp;navigation-size=&amp;navigation-stroke=&amp;preloader=0&amp;svg=1&amp;simplifiedMobile=1&amp;minify=1#menu"></use></svg></span></div>
+  </div>
+</nav>
 
-    <!-- Sidebar -->
-    <nav class="sidebar lime" data-sidebar-id="1">
-      <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-      <div class="content">
-        <a href="#" title="Brand Name" class="logo"></a>
-        <ul class="mainMenu uppercase">
-          <li><a href="#">Nos Solutions</a></li>
-          <li><a href="#">À Propos</a></li>
-          <li><a href="#">F.A.Q.</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="subMenu">
-          <li><a href="#">---</a></li>
-          <li><a href="#">---</a></li>
-          <li><a href="#">---</a></li>
-        </ul>
-        <ul class="social">
-          <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-          <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-          <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></a></li>
-          <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
-        </ul>
-      </div>
-    </nav>
+<!-- Nos Solution Menus -->
+<div class="dropdown translate top left center customDropdown" data-dropdown-id="nos-solutions-menu">
+  <ul>
+    <li class="link"><a href="/p550-traitement-diesel.html">P550 - Diesel</a></li>
+    <li class="link"><a href="p231-traitement-essence.html">P231 - Essence</a></li>
+    <li class="link"><a href="p260-traitement-huiles.html">P260 - Huiles</a></li>
+    <li class="link"><a href="#">Dosage</a></li>
+    <li class="link"><a href="#">Problématiques du carburant</a></li>
+  </ul>
+</div>
+
+<!-- A Propos Menus -->
+<div class="dropdown translate top left center customDropdown" data-dropdown-id="a-propos-menu">
+  <ul>
+    <li class="link"><a href="#">Qui sommes nous</a></li>
+    <li class="link"><a href="#">Références / Partenaires</a></li>
+    <li class="link"><a href="#">Nos certifications</a></li>
+    <li class="link"><a href="#">Ils nous font confiance</a></li>
+  </ul>
+</div>
+
+<!-- Tests Menus -->
+<div class="dropdown translate top left center customDropdown" data-dropdown-id="tests-menu">
+  <ul>
+    <li class="link"><a href="">Transports</a></li>
+    <li class="link"><a href="">Génératrices</a></li>
+  </ul>
+</div>
+
+<!-- Boutique Menus -->
+<div class="dropdown translate top left center customDropdown" data-dropdown-id="boutique-menu">
+  <ul>
+    <li class="link"><a href="">Vente en ligne</a></li>
+    <li class="link"><a href="">Vente en magasins</a></li>
+  </ul>
+</div>
+
+<!-- International Menus -->
+<div class="dropdown translate top left center customDropdown" data-dropdown-id="international-menu">
+  <ul>
+    <li class="link"><a href="">Nos distributeurs dans le monde</a></li>
+    <li class="link"><a href="">Recherche d'importateurs</a></li>
+  </ul>
+</div>
+
+<!-- Language -->
+<div class="dropdown translate top right" data-dropdown-id="language">
+  <ul>
+    <li data-switch-lang="en">English</li>
+    <li data-switch-lang="es">Español</li>
+    <li data-switch-lang="fr">Français</li>
+  </ul>
+</div>
+
+
+<nav class="sidebar lime" data-sidebar-id="1">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <a href="#" title="Brand Name" class="textLogo selectable sourceSans"><p class="bold"><span class="text-black">Protea</span><span class="">P2</span></p></a>
+    <ul class="mainMenu uppercase">
+      <li><a href="#">Nos Solutions</a></li>
+      <li><a href="#">À Propos</a></li>
+      <li><a href="#">F.A.Q.</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="subMenu">
+      <li><a href="#">---</a></li>
+      <li><a href="#">---</a></li>
+      <li><a href="#">---</a></li>
+    </ul>
+    <ul class="social">
+      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#googlePlus"></use></svg></a></li>
+      <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></a></li>
+    </ul>
+  </div>
+</nav>
+
 
     <!-- Navigation -->
     <nav class="side medium">
@@ -451,11 +549,45 @@
       </div>
     </section>
 
+<!-- Slide #57 -->
+<section class="slide fade kenBurns">
+  <div class="content">
+    <div class="container">
+      <div class="wrap noSpaces">
+
+        <div class="fix-12-12 bottomBox">
+          <ul class="grid fixedSpaces">
+            <li class="col-4-12 ae-3">
+              <h3 class="margin-bottom-1">Nos bureaux</h3>
+              <p>Carrefour Dugazon,<br>Les Abymes 97139<br>GUADELOUPE</p>
+              <h3 class="margin-bottom-1">Pour nous contacter</h3>
+              <p>(+590) 590 218 888</p>
+              <p><a href="mailto:contact@proteactive-caraibes.com ">contact@proteactive-caraibes.com</a></p>
+            </li>
+            <li class="col-4-12 ae-4">
+              <h3 class="margin-bottom-1">À propos de PROTEA P2</h3>
+              <p>Les traitements PROTEA P2 ont été conçus pour résoudre des problèmes critiques d'émission de gaz, de performances et de réduction de coûts…</p>
+              <p>Les enjeux et les besoins ont évolué, et il est temps d'apporter une réponse simple, efficace, écologique et économique.</p>
+            </li>
+            <li class="col-4-12 ae-5">
+<!--               <h3 class="margin-bottom-1">Our blog</h3>
+              <p><a href="#">Trend Breakdown: New Ways to Use the Hamburger Icon</a></p>
+ -->            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+
+
     <!-- Panel Bottom #13 -->
     <nav class="panel bottom forceMobileView">
       <div class="sections desktop">
         <div class="left">
-          <a href="#" title="Brand Name" class="textLogo text-blueGrey selectable sourceSans">Protea<span class="light text-pink">P2</span></a>
+          <a href="#" title="Brand Name" class="textLogo text-blueGrey selectable sourceSans">Protea<span class="light text-lime">P2</span></a>
         </div>
         <div class="center">
           <ul class="menu uppercase">
@@ -466,6 +598,7 @@
         <div class="right"><span class="button actionButton dropdownTrigger" data-dropdown-id="2"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use></svg></span></div>
       </div>
     </nav>
+
 
     <!-- Share Window -->
     <div class="dropdown share bottom right" data-dropdown-id="2" data-text="Take a look at this" data-url="" data-pinterest-image="">
@@ -480,3 +613,4 @@
     </div>
   </body>
 </html>
+
