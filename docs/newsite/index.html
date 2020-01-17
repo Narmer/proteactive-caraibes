@@ -30,7 +30,7 @@
 <!--script src="js/custom.js" type="text/javascript" name="custom-scripts"></script-->
 
 </head>
-<body class="slides scroll noPreload simplifiedMobile stage-1" style="display: block;">
+<body class="slides scroll smoothScroll noPreload animated simplifiedMobile stage-1" style="display: block;">
 
 
 <!-- SVG Library -->
@@ -129,11 +129,12 @@
   }
 </style>
 <!-- Navigation -->
-
-<nav class="panel top small fixed">
-  <div class="sections">
+<nav class="panel top small fixed forceMobileView">
+  <div class="sections desktop">
     <div class="left">
-      <img src="https://res.cloudinary.com/proteap2/image/upload/v1572271624/logos/proteap2-logo.png" alt="Image" class="whiteLogo" height="60"/>
+      <a href="/index.html" title="Protea P2">
+      <img src="https://res.cloudinary.com/proteap2/image/upload/v1572271624/logos/proteap2-logo.png" alt="Logo Protea P2" class="" height="60"/>
+      </a>
     </div>
     <div class="center">
       <ul class="menu small sourceSans">
@@ -171,8 +172,12 @@
     <div class="right"><span data-dropdown-id="language" class="button actionButton dropdownTrigger">EN</span></div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Brand Name" class="textLogo selectable sourceSans"><p class="hero bold"><span class="text-black">Protea</span><span class="text-lime">P2</span></p></a></div>
-    <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></use></svg></span></div>
+    <div class="left">
+    <a href="/index.html" title="Protea P2">
+      <img src="https://res.cloudinary.com/proteap2/image/upload/v1572271624/logos/proteap2-logo.png" alt="Logo Protea P2" class="" height="60"/>
+      </a>
+    </div>
+    <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
 
@@ -200,8 +205,8 @@
 <!-- Tests Menus -->
 <div class="dropdown translate top left center customDropdown" data-dropdown-id="tests-menu">
   <ul>
-    <li class="link"><a href="">Transports</a></li>
-    <li class="link"><a href="">Génératrices</a></li>
+    <li class="link"><a href="/tests-transports.html">Transports</a></li>
+    <li class="link"><a href="tests-generatrice.html">Génératrices</a></li>
   </ul>
 </div>
 
@@ -259,132 +264,46 @@
 
 <!-- EXAMPLE: Fullscreen Slider -->
 <!-- Fullscreen Example -->
-<section class="slide fade-4 scenic fullscreenSlider">
-  <ul class="slider autoplay" data-slider-interval="6000" data-slider-id="fullscreen-slider">
-    <li class="selected">
-      <div class="content">
-        <div class="container">
-          <div class="wrap noSpaces">
 
-		        <div class="fix-12-12">
-		          <div class="fix-7-12 left toLeft">
-		            <h1 class="uppercase ae-1">Agent hyperlubrifiant<br>…protège tous les moteurs</h1>
-		            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-		          </div>
-		        </div>
+<script src="https://cdn.rawgit.com/mattboldt/typed.js/548c6ade/dist/typed.min.js"></script>
+<script>
+  $(function(){
+    $(".typed").typed({
+      strings: ["Agent hyperlubrifiant<br>…protège tous les moteurs", "élimination des bactéries…<br>rapide, efficace, durable", "Hausse des performances…<br>baisse de la consommation<br>…et diminution des coûts", "Hausse de la production…<br>et une meilleur qualité", "La réponse aux problèmes des carburants", "Baisse des émissions de gaz…<br>réduction de la pollution"],
+      typeSpeed: 50,
+      backDelay: 2500,
+      loop: true,
+      shuffle: false
+    });
+  });
+</script>
 
+<!-- copy styles for blinking cursor -->
+<style>
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@-webkit-keyframes blink {50%{opacity:0;}}
+@keyframes blink {50%{opacity:0;}}
+
+</style>
+
+<section class="slide fade-4">
+  <div class="content">
+    <div class="container">
+      <div class="wrap noSpaces">
+        <div class="fix-12-12">
+          <div class="fix-7-12 left toLeft">
+            <h1 class="uppercase ae-1"><span class="typed">.</span></h1>
+            <a class="button lime crop ae-3" href="./p550-traitement-diesel.html">Obtenir plus d'informations</a>
           </div>
         </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/moto.jpg)"></div>
-    </li>
-    <li class="selected">
-      <div class="content">
-        <div class="container">
-          <div class="wrap noSpaces">
-
-		        <div class="fix-12-12">
-		          <div class="fix-7-12 left toLeft">
-		            <h2 class="uppercase ae-1">élimination des bactéries…<br>rapide, efficace, durable</h2>
-		            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-		          </div>
-		        </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/yachts.jpg)"></div>
-    </li>
-    <li class="selected">
-      <div class="content">
-        <div class="container">
-          <div class="wrap noSpaces">
-
-		        <div class="fix-12-12">
-		          <div class="fix-8-12 left toLeft">
-		            <h2 class="uppercase ae-1">Hausse des performances…<br>baisse de la consommation<br>…et diminution des coûts</h2>
-		            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-		          </div>
-		        </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/jetski.jpg)"></div>
-    </li>
-    <li>
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-						<div class="bottomBox">
-			        <div class="fix-12-12">
-			          <div class="fix-7-12 left toLeft">
-			            <h2 class="uppercase ae-1">Hausse de la production…<br>et une meilleur qualité</h2>
-			            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-			          </div>
-			        </div>
-			      </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/centrale-too.jpg)"></div>
-    </li>
-    <li>
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-						<div class="bottomBox">
-			        <div class="fix-12-12">
-			          <div class="fix-7-12 left toLeft">
-			            <h2 class="uppercase ae-1">La réponse aux problèmes des carburants</h2>
-			            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-			          </div>
-			        </div>
-			      </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/cargo.jpg)"></div></li>
-    <li>
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-						<div class="bottomBox">
-			        <div class="fix-12-12">
-			          <div class="fix-7-12 left toLeft">
-			            <h2 class="uppercase ae-1">Baisse des émissions de gaz…<br>réduction de la pollution</h2>
-			            <a class="button lime crop ae-3">Obtenir plus d'informations</a>
-			          </div>
-			        </div>
-			      </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/centrale.jpg)"></div></li>
-  </ul>
-
-
-  <!-- Dots navigation (optional) -->
-  <nav class="panel bottom">
-    <div class="sections">
-      <div class="center">
-        <ul class="controller dots" data-slider-id="fullscreen-slider">
-            <li class="dot selected"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-          </ul>
       </div>
     </div>
-  </nav>
+  </div>
+  <div class="background" style="background-image:url(assets/img/banners/moto.jpg)"></div>
 </section>
 
 <!-- Features -->
