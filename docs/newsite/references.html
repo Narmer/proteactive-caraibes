@@ -103,33 +103,17 @@
 
 
 
-<style>
-  .panel .menu { cursor:pointer;}
-  .panel  .menu.small li {
-    outline: none;
-    border-radius: 50px;
-    padding: 7px 17px;
-    will-change: background;
-    -webkit-transition:0.25s background;
-    transition:0.25s background;
-  }
-  .panel .sections .menu.small li:focus,
-  .panel .sections .menu.small li:hover {
-    background: rgba(0, 0, 0, 0.15);
-  }
-  .dropdown.customDropdown { padding:10px 0;}
-  .dropdown.customDropdown li:not(.link),
-  .dropdown.customDropdown li.link a { font-size: 18px; padding: 8px 10px 8px 20px; cursor: pointer; display: block; text-align: left; }
-  .dropdown.customDropdown li:hover { background:rgba(0, 0, 0, 0.05);}
-  .dropdown-icon {
-    stroke: #fff;
-    width: 10px !important;
-    height: 10px !important;
-    margin-left: 4px;
-  }
-</style>
 <!-- Navigation -->
-<nav class="panel top small fixed forceMobileView">
+<nav class="panel top small fixed defaultPanel">
+  <div class="submenu white">
+    <div class="sections">
+      <div class="center">
+        <ul class="menu sourceSans">
+          <li>tél: (+33) 988.995.230</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="sections desktop">
     <div class="left">
       <a href="index.html" title="Protea P2">
@@ -261,20 +245,20 @@
 
 
 
-    <!-- P550 -->
+    <!--  -->
     <section class="slide fade kenBurns">
       <div class="content">
         <div class="container">
           <div class="wrap">
 
-        <div class="fix-12-12">
-          <div class="fix-8-12 left toLeft">
-            <h1 class="ae-1">Nos partenaires, nos références, notre réseau</h1>
-            <div class="ae-2">
-              <p class="hero">Ils nous font confiance</p>
+          <div class="fix-12-12">
+            <div class="fix-8-12 left toLeft">
+              <h1 class="ae-1">Nos partenaires, nos références, notre réseau</h1>
+              <div class="ae-2">
+                <p class="hero">Ils nous font confiance</p>
+              </div>
             </div>
           </div>
-        </div>
 
           </div>
         </div>
@@ -309,216 +293,270 @@
               <h2 class="ae-1">Ils témoignent de leur confiance</h2>
               <div class="ae-2"><p>Plusieurs partenaires et clients nous livrent leur histoire.</p></div>
             </div>
+
             <div class="fix-12-12">
-              <ul class="grid later fixedSpaces equal left margin-top-5">
-<!--                 <li class="col-4-12 ae-5">
-                  <a href="#" class="box-79">
-                    <div class="name-79 table wide">
-                      <div class="cell">
-                        <h3>Ils témoignent de leur confiance</h3>
-                        <p class="small">Plusieurs partenaires et clients nous livrent leur histoire.</p>
+              <ul class="grid grid-77 later equal left">
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="bompard">
+                      <img src="assets/img/interviews/transports-bompard.jpg" alt="Picture" class="wide"/>
+                    </div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Transports Bompard</div>
+                          <div class="description-77">Transport céréalier</div>
+                          <div class="author-77">
+                            <div class="name-77">Laurent Bompard</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </a>
                 </li>
- -->
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67 video popupTrigger">
-                      <div class="videoThumbnail noShadow popupTrigger ae-6" data-popup-id="bompard">
-                      <img src="assets/img/interviews/transports-bompard.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="renault-gonesse">
+                      <img src="assets/img/interviews/renault-trucks-gonesse.jpg" alt="Picture" class="wide"/>
                     </div>
-                    </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Transports Bompard</div>
-                        <div class="category-67">Transport céréalier</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Renault Trucks Gonesse</div>
+                          <div class="description-77">Concessionnaire</div>
+                          <div class="author-77">
+                            <div class="name-77">Thierry YVON</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-4 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67 video popupTrigger">
-                      <div class="popupTrigger ae-6" data-popup-id="renault-gonesse">
-                      <img src="assets/img/interviews/renault-trucks-gonesse.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="beyel">
+                      <img src="assets/img/interviews/beyel.jpg" alt="Picture" class="wide"/>
                     </div>
-                    </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Renault Trucks Gonesse</div>
-                        <div class="category-67">Concessionnaire</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Beyel SARL</div>
+                          <div class="description-77">Transporteur & marchand de fuel</div>
+                          <div class="author-77">
+                            <div class="name-77">Jacky Wentzinger</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-5 fromCenter">
-                  <div href="#" class="box-67">
-                     <div class="thumbnail-67 video popupTrigger">
-                      <div class="videoThumbnail noShadow popupTrigger ae-6" data-popup-id="bompard">
-                     <img src="assets/img/interviews/beyel.jpg" class="wide"/>
-                   </div>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="cnh">
+                      <img src="assets/img/interviews/cnh.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Beyel SARL</div>
-                        <div class="category-67">Transporteur & marchand de fuel</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">CNH</div>
+                          <div class="description-77">Matériel agricole</div>
+                          <div class="author-77">
+                            <div class="name-77">Philippe Fabro-Joao</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-               <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/cnh.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="bernard-trucks">
+                      <img src="assets/img/interviews/bernard-trucks-bonneville.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">CNH</div>
-                        <div class="category-67">Matériel agricole</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Bernard Trucks Bonneville</div>
+                          <div class="description-77">Concessionnaire</div>
+                          <div class="author-77">
+                            <div class="name-77">Bernard-Louis Lionel</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/bernard-trucks-bonneville.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="bassigny">
+                      <img src="assets/img/interviews/bassigny.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Bernard Trucks Bonneville</div>
-                        <div class="category-67">Concessionnaire</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Bassigny Poids Lourds</div>
+                          <div class="description-77">Concessionnaire</div>
+                          <div class="author-77">
+                            <div class="name-77">Stéphane Chaudron</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/bassigny.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="alpes-transports">
+                      <img src="assets/img/interviews/alpes-transports.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Bassigny Poids Lourds</div>
-                        <div class="category-67">Concessionnaire</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Alpes Transports</div>
+                          <div class="description-77">Bus et autocars</div>
+                          <div class="author-77">
+                            <div class="name-77">M. Veyrat</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/alpes-transports.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="gt-sud-ouest">
+                      <img src="assets/img/interviews/gt-sud-ouest.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Alpes Transports</div>
-                        <div class="category-67">Bus et autocars</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">GT Sud Ouest</div>
+                          <div class="description-77">Travaux publiques</div>
+                          <div class="author-77">
+                            <div class="name-77">Marc Francalanza</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/gt-sud-ouest.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="gtl">
+                      <img src="assets/img/interviews/gtl.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">GT Sud Ouest</div>
-                        <div class="category-67">Travaux publiques</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">GTL</div>
+                          <div class="description-77">Transporteur</div>
+                          <div class="author-77">
+                            <div class="name-77">Christian FOUQUERAY</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/gtl.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="renault-trucks-grand-lyon">
+                      <img src="assets/img/interviews/renault-trucks-grand-lyon.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">GTL</div>
-                        <div class="category-67">Transporteur</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Renault Trucks Grand Lyon</div>
+                          <div class="description-77">Concessionnaire</div>
+                          <div class="author-77">
+                            <div class="name-77">Julien Daveau</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/renault-trucks-grand-lyon.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="kleck">
+                      <img src="assets/img/interviews/kleck.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Renault Trucks Grand Lyon</div>
-                        <div class="category-67">Concessionnaire</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Établissements Kleck</div>
+                          <div class="description-77">Transporteur, marchand de fuel</div>
+                          <div class="author-77">
+                            <div class="name-77">Serge Kleck</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/kleck.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="reva-center">
+                      <img src="assets/img/interviews/reva-center.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Établissements Kleck</div>
-                        <div class="category-67">Transporteur, marchand de fuel</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Reva Center</div>
+                          <div class="description-77">Bus et autocar</div>
+                          <div class="author-77">
+                            <div class="name-77">Alain Charnavel</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/reva-center.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="theobald-trucks">
+                      <img src="assets/img/interviews/theobald-trucks.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Reva Center</div>
-                        <div class="category-67">Bus et autocar</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Reva Center</div>
+                          <div class="description-77">Bus et autocar</div>
+                          <div class="author-77">
+                            <div class="name-77">Alain Charnavel</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/theobald-trucks.jpg" class="wide"/>
+                <li class="col-3-12">
+                  <a href="#" class="box-77 ae-3 fromCenter">
+                    <div class="thumbnail-77 video popupTrigger" data-popup-id="transalliance">
+                      <img src="assets/img/interviews/transalliance.jpg" alt="Picture" class="wide"/>
                     </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Théobald Trucks</div>
-                        <div class="category-67">Magasinier garage Volvo</div>
+                    <div class="details-77 equalElement">
+                      <div class="table wide">
+                        <div class="cell">
+                          <div class="title-77">Transalliance</div>
+                          <div class="description-77">Transport et logistique</div>
+                          <div class="author-77">
+                            <div class="name-77">Alain Schiltz</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
-                <li class="col-3-12 ae-3 fromCenter">
-                  <div href="#" class="box-67">
-                    <div class="thumbnail-67">
-                      <img src="assets/img/interviews/transalliance.jpg" class="wide"/>
-                    </div>
-                    <div class="name-67 equalElement table wide">
-                      <div class="cell">
-                        <div class="title-67">Transalliance</div>
-                        <div class="category-67">Transport et logistique</div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-               </ul>
+              </ul>
                <div class="button white stroke crop"><a href="http://www.youtube.com/channel/UCf8U-WYHmXd808r7FT37RKg" target="_blank">Pour voir toutes nos vidéos</a></div>
             </div>
-
           </div>
         </div>
       </div>
       <div class="background" style="background-image:url(assets/img/img-67.jpg)"></div>
     </section>
+
 
     <!-- Popup Video -->
     <div class="popup autoplay" data-popup-id="bompard">
@@ -528,7 +566,7 @@
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://www.youtube.com/watch?v=F9WtH21vla0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F9WtH21vla0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -542,7 +580,7 @@
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://youtu.be/fiBlQNKo6BE" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fiBlQNKo6BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -556,14 +594,42 @@
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://youtu.be/yWFnuWM4U0I" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yWFnuWM4U0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="cnh">
+      <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12">
+              <div class="embedVideo popupContent">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GlSokzVsjlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup autoplay" data-popup-id="bernard-trucks">
+      <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12">
+              <div class="embedVideo popupContent">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XGWulzwVeEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup autoplay" data-popup-id="gt-sud-ouest">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
@@ -577,93 +643,118 @@
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="bassigny">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/okLZeCfIyR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="alpes-transports">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1uLDPLSwoew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="gtl">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e_eEkzNp0Os" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="renault-trucks-grand-lyon">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WAZTRnCI3tM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="kleck">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0B0H7DKZCNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="popup autoplay" data-popup-id="82">
+    <div class="popup autoplay" data-popup-id="reva-center">
       <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
       <div class="content">
         <div class="container">
           <div class="wrap">
             <div class="fix-10-12">
               <div class="embedVideo popupContent">
-                <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPUuEKCw7bM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
+    <div class="popup autoplay" data-popup-id="theobald-trucks">
+      <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12">
+              <div class="embedVideo popupContent">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iHwKsLjtVHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup autoplay" data-popup-id="transalliance">
+      <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12">
+              <div class="embedVideo popupContent">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5AF60Qek4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <section class="slide fade whiteSlide kenBurns">

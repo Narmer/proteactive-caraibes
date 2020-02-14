@@ -103,33 +103,17 @@
 
 
 
-<style>
-  .panel .menu { cursor:pointer;}
-  .panel  .menu.small li {
-    outline: none;
-    border-radius: 50px;
-    padding: 7px 17px;
-    will-change: background;
-    -webkit-transition:0.25s background;
-    transition:0.25s background;
-  }
-  .panel .sections .menu.small li:focus,
-  .panel .sections .menu.small li:hover {
-    background: rgba(0, 0, 0, 0.15);
-  }
-  .dropdown.customDropdown { padding:10px 0;}
-  .dropdown.customDropdown li:not(.link),
-  .dropdown.customDropdown li.link a { font-size: 18px; padding: 8px 10px 8px 20px; cursor: pointer; display: block; text-align: left; }
-  .dropdown.customDropdown li:hover { background:rgba(0, 0, 0, 0.05);}
-  .dropdown-icon {
-    stroke: #fff;
-    width: 10px !important;
-    height: 10px !important;
-    margin-left: 4px;
-  }
-</style>
 <!-- Navigation -->
-<nav class="panel top small fixed forceMobileView">
+<nav class="panel top small fixed defaultPanel">
+  <div class="submenu white">
+    <div class="sections">
+      <div class="center">
+        <ul class="menu sourceSans">
+          <li>tél: (+33) 988.995.230</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="sections desktop">
     <div class="left">
       <a href="index.html" title="Protea P2">
