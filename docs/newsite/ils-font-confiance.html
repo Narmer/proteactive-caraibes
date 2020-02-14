@@ -7,7 +7,8 @@
 
 
 		<!-- Page Title -->
-		<title>Protea P2</title>
+		<title>Nos clients nous font confiance</title>
+
 
 <!-- Fonts and Material Icons -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Material+Icons" rel="stylesheet" type="text/css"/>
@@ -100,7 +101,6 @@
   <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
 
 </svg>
-
 
 
 <!-- Navigation -->
@@ -244,299 +244,201 @@
 </nav>
 
 
-    <!-- Navigation -->
-    <nav class="side medium">
-      <div class="navigation">
-        <ul>
-          <li data-title="P231"></li>
-          <li data-title="Introduction"></li>
-          <li data-title="Application"></li>
-          <li data-title="Presentation"></li>
-          <li data-title="Caracteristiques"></li>
-          <li data-title="Dosage"></li>
-          <li data-title="Consignes"></li>
-          <li data-title="Manipulation"></li>
-        </ul>
-      </div>
-    </nav>
+<script>
+$(function(){
+	var numberOfItemsToShow = 6;
 
-    <!-- P231 -->
-    <section class="slide fade kenBurns" data-title="P231">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
+	$('.showMore').click(function() {
 
-            <div class="fix-5-12">
-              <h1 class="blueGrey padding-2 ae-1"><span class="text-pink">P231 - Fiche produit</span><br><span class="text-pink">Traitement essence</span></h1>
-              <a class="button pink ae-5 fromCenter" href="https://res.cloudinary.com/proteap2/image/upload/v1572283525/fiches/proteactive-P231-fiche-produit-_fra_qeedcc.pdf" target="_blank"><span class=" text-blueGrey">Télécharger la fiche produit en format PDF</span></a>
-            </div>
+		if (window.isScroll) {
+			$('html, body').animate({ scrollTop: $(".showMore").offset().top }, 500);
+		} else {
+			$('.content').animate({ scrollTop: $(".showMore").position().top }, 500);
+		}
 
-          </div>
-        </div>
-      </div>
-      <div class="background" style="background-image:url(assets/img/banners/moto.jpg)"></div>
-    </section>
+		if ($('.items-container li.hidden').length <= numberOfItemsToShow){
+			$('.showMore').remove();
+		}
 
-    <!-- Introduction -->
-    <section class="slide whiteSlide" data-title="Introduction">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
+		$('.items-container li.hidden:lt('+numberOfItemsToShow+')').removeClass('hidden').find('.done').removeClass('done');
+	});
+});
+</script>
 
-            <div class="fix-10-12">
-              <h2 class="ae-1 text-pink">Introduction</h2>
-              <div class="ae-2"><p>P231 traitement Essence est une formule high-tech offrant une solution globale de traitement et de prévention aux utilisateurs de moteurs Essence permettant de résoudre la majeure partie des problèmes liés au combustible tant sur les moteurs prévus pour fonctionner avec de l’essence plombée (ex-Super) que ceux fonctionnant avec de l’essence sans plomb.</p></div>
-            </div>
+<style>
+	.items-container li.hidden {
+		display: none;
+	}
+</style>
 
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="slide whiteSlide">
+	<div class="content">
+		<div class="container">
+			<div class="wrap top">
 
-    <!-- Applications -->
-    <section class="slide whiteSlide" data-title="Application">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
+				<div class="fix-10-12 margin-top-10 toCenter">
+					<h1 class="ae-1">Lettres de recommandation</h1>
+				</div>
+				<div class="fix-12-12">
+					<ul class="grid later fixedSpaces equal left margin-top-5 items-container controller popupTrigger" data-popup-id="items-popup" data-slider-id="items-popup" >
+						<li class="col-4-12 ae-3 fromCenter">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-01.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">23 novembre 2011</div>
+										<div class="title-67">EDF Guadeloupe</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-4-12 ae-4 fromCenter">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-02.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">3 mai 2011</div>
+										<div class="title-67">Renault Trucks SAV</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-4-12 ae-5 fromCenter">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-03.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">Décembre 2008</div>
+										<div class="title-67">Renault Trucks</div>
+									</div>
+								</div>
+							</a>
+						</li>
 
-            <div class="fix-10-12">
-              <h2 class="ae-1 text-pink">Application</h2>
-            </div>
+						<!-- hidden items below this line -->
 
-            <div class="fix-12-12">
-              <ul class="flex reverse">
-                <li class="col-12-12 left cell-32">
-                  <ul class="items-32 disc">
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-4">Permet d’utiliser de l’essence sans plomb dans les moteurs prévus pour l’essence normal ou super.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Réduit les bruits de soupapes.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Diminue les dépôts sur les têtes de soupapes.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Lubrifie et réduit l’usure des soupapes.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Nettoie les injecteurs ou les carburateurs.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Protège les carburateurs et les injecteurs de la corrosion.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Nettoie la chambre de combustion.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Réduit la fumée des moteurs.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Protège contre la rouille toutes les parties métalliques en contact avec le carburant.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Fait résistance à l’oxydation de l’essence.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Réduit de manière significative la formation de gomme et dépôts.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Lubrifie la partie supérieure du moteur et pose une couche protectrice à l’ensemble du système d’alimentation.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Evite la corrosion et la rouille dans le réservoir d’essence.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Diminue considérablement la formation de dépôts et de résidus pour l’essence entreposée en longue durée.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Réduit la consommation de carburant.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Convient à tous type de moteurs thermiques à essence, carburateurs ou injections et à tous tue d’échappement tout en assurant une parfaite protection.</h3>
-                    </li>
-                    <li class="fix-12-12 toLeft text-32">
-                      <h3 class="ae-6">Prolonge la durée de vie du moteur.</h3>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+						<li class="col-4-12 hidden">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-01.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">24 novembre 2008</div>
+										<div class="title-67">Volvo Trucks SAV</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-4-12 hidden">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-02.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">3 novembre 2008</div>
+										<div class="title-67">T.O.M.</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-4-12 hidden">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-03.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">3 septembre 2008</div>
+										<div class="title-67">Socara</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-4-12 hidden">
+							<a href="#" class="box-67">
+								<div class="thumbnail-67">
+									<img src="assets/img/67-01.jpg" class="wide"/>
+								</div>
+								<div class="name-67 equalElement table wide">
+									<div class="cell">
+										<div class="category-67">12 décembre 2007</div>
+										<div class="title-67">Aux délices de régale</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="center"><a class="button round small gray showMore ae-6">Afficher plus de lettres<i class="material-icons right">arrow_downward</i></a></div>
+				</div>
 
-          </div>
-        </div>
-      </div>
-    </section>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <!-- Presentation -->
-    <section class="slide whiteSlide fromLeft" data-title="Presentation">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
+<div class="popup animated" data-popup-id="items-popup">
+	<div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+	<div class="content">
+		<div class="container">
+			<div class="wrap spaces">
 
-            <div class="fix-10-12">
-              <h2 class="ae-1 text-pink">Présentation</h2>
-            </div>
+				<ul class="slider fix-10-12 clickable popupContent ae-1 fromCenter disableSelect" data-slider-id="items-popup">
+					<li class="selected">
+						<img src="assets/img/67-01.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-02.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-03.jpg" class="wide"/>
+					</li>
 
-            <div class="fix-12-12">
-              <ul class="flex reverse">
-                <li class="col-8-12 left cell-32">
-                  <ul class="items-32">
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-4">Fiole métal de 460 ml en carton de 28 pièces.</h3>
-                    </li>
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-6">Fiole métal de 200 ml en carton de 56 pièces.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">Bidon métal de 1 litre.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">Bidon métal de 5 litres.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">Bidon métal de 30 litres.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">Fût métal de 200 litres.</h3>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+					<li>
+						<img src="assets/img/67-01.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-02.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-03.jpg" class="wide"/>
+					</li>
 
-          </div>
-        </div>
-      </div>
-    </section>
+					<li>
+						<img src="assets/img/67-01.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-02.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-03.jpg" class="wide"/>
+					</li>
 
-    <!-- Caracteristiques -->
-    <section class="slide whiteSlide" data-title="Caracteristiques">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
+					<li>
+						<img src="assets/img/67-01.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-02.jpg" class="wide"/>
+					</li>
+					<li>
+						<img src="assets/img/67-03.jpg" class="wide"/>
+					</li>
+				</ul>
 
-            <div class="fix-10-12">
-              <h2 class="ae-1 huge text-pink">Caractéristiques</h2>
-            </div>
+			</div>
+		</div>
+	</div>
+</div>
 
-            <div class="fix-8-12">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Propriétés</td>
-                    <td>Caractéristiques</td>
-                  </tr>
-                  <tr>
-                    <td>Couleur</td>
-                    <td>Rouge</td>
-                  </tr>
-                  <tr>
-                    <td>Apparence</td>
-                    <td>Liquide clair</td>
-                  </tr>
-                  <tr>
-                    <td>Point éclair (D-93)</td>
-                    <td>15°C</td>
-                  </tr>
-                  <tr>
-                    <td>Densité 20°C</td>
-                    <td>0.835±0.05</td>
-                  </tr>
-                  <tr>
-                    <td>Point d’ébullition initial</td>
-                    <td>81°C</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Dosage -->
-    <section class="slide whiteSlide" data-title="Dosage">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-10-12">
-              <h2 class="ae-1 huge text-pink">Dosage…</h2>
-              <div class="ae-2"><p class="hero">1 flacon de 460 ml de PROTEA P231 pour 69 litres d’essence</p></div>.
-            </div>
-
-            <div class="fix-10-12">
-              <h2 class="ae-1 text-pink">…et Utilisation</h2>
-              <div class="ae-2"><p>Verser le produit avant remplissage du réservoir afin d’obtenir un mélange homogène.</p>
-              <p>Pour l’utilisation directe dans des cuves, il est recommandé de procéder en plus à une première additivation directe de chaque moteur au dosage préconisé.</p></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Consignes de securite -->
-    <section class="slide whiteSlide fromLeft" data-title="Consignes">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-12-12">
-              <ul class="flex reverse">
-                <li class="col-8-12 left cell-32">
-                  <h2 class="ae-2 text-pink">Consignes de sécurité</h2>
-                  <ul class="items-32">
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-4">R11 hautement inflammable.</h3>
-                    </li>
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-6">R20/21 Nocif par inhalation et au contact de la peau.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">R38 Irrite la peau.</h3>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Manipulation et stockage -->
-    <section class="slide whiteSlide fromLeft" data-title="Manipulation">
-      <div class="content">
-        <div class="container">
-          <div class="wrap">
-
-            <div class="fix-12-12">
-              <ul class="flex reverse">
-                <li class="col-8-12 left cell-32">
-                  <h2 class="ae-2 text-pink">Manipulation et stockage</h2>
-                  <ul class="items-32">
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-4">Manipuler et ouvrir les fûts avec précaution.</h3>
-                    </li>
-                    <li class="fix-6-12 toLeft text-32">
-                      <h3 class="ae-6">Entreposer les fûts dans un local ventilé.</h3>
-                    </li>
-                    <li class="fix-4-12 toLeft text-32">
-                      <h3 class="ae-6">Protéger les fûts de toute source directe de chaleur.</h3>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
 
 <!-- Slide #57 -->
 <section class="slide fade kenBurns">
