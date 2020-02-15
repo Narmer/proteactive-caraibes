@@ -103,13 +103,34 @@
 
 
 
+<style>
+.instagram {background: #303030;}
+.sections .menu li a {padding: 4px 3px 5px;}
+.dropdown[data-dropdown-id="moreIcons"] {margin-left: 13px;}
+.dropdown[data-dropdown-id="moreIcons"] li {width:100%;text-align:left;padding:0;}
+.dropdown[data-dropdown-id="moreIcons"] li:last-child {border-radius:0 0 7px 7px; overflow:hidden;}
+.dropdown[data-dropdown-id="moreIcons"] li a {display: block;padding: 12px 20px 13px;opacity:1 !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a:not(:hover) {background:transparent!important;box-shadow: 0 1px 0 #ccc inset; z-index:-1; color: #303030 !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a:hover {color:#fff;}
+.dropdown[data-dropdown-id="moreIcons"] li a:hover svg {fill:#fff !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a svg { display:inline; width: 24px; height:24px; fill:#303030 !important; vertical-align: middle; margin-right:10px;}
+</style>
 <!-- Navigation -->
 <nav class="panel top small fixed defaultPanel">
   <div class="submenu white">
     <div class="sections">
+      <div class="left">
+      </div>
       <div class="center">
         <ul class="menu sourceSans">
           <li>tél: (+33) 988.995.230</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="menu uppercase crop small">
+          <li><a href="http://twitter.com/designmodo" target="_blank"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+          <li><a href="https://www.facebook.com/designmodo/" target="_blank"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+          <li class="dropdownTrigger" data-dropdown-id="moreIcons"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use></svg></li>
         </ul>
       </div>
     </div>
@@ -245,8 +266,15 @@
 </nav>
 
 
-<!-- EXAMPLE: Fullscreen Slider -->
-<!-- Fullscreen Example -->
+<script>
+  $(function(){
+    setInterval(function(){
+      if($('.slideshow').hasClass('selected')){
+        $('.slideshow.selected .background.shown').removeClass('shown').nextOrFirst('.background').addClass('shown');
+      }
+    },4000); // <-- set your interval here
+  });
+</script>
 
 <script src="https://cdn.rawgit.com/mattboldt/typed.js/548c6ade/dist/typed.min.js"></script>
 <script>
@@ -261,40 +289,36 @@
   });
 </script>
 
-<!-- copy styles for blinking cursor -->
-<style>
-.typed-cursor{
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-@-webkit-keyframes blink {50%{opacity:0;}}
-@keyframes blink {50%{opacity:0;}}
-
-</style>
-
-<section class="slide fade-4">
+<section class="slide scenic fade slideshow">
   <div class="content">
     <div class="container">
-      <div class="wrap noSpaces">
+      <div class="wrap">
+
         <div class="fix-12-12">
           <div class="fix-7-12 left toLeft">
             <h1 class="uppercase ae-1"><span class="typed">.</span></h1>
             <a class="button lime crop ae-3" href="./p550-traitement-diesel.html">Obtenir plus d'informations</a>
           </div>
         </div>
+
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/banners/moto.jpg)"></div>
+  <!-- your background images are here -->
+  <div class="background shown" style="background-image:url(https://res.cloudinary.com/proteap2/image/upload/v1574517787/Banners/centrale_iqzxjq.jpg)"></div>
+  <div class="background" style="background-image:url(https://res.cloudinary.com/proteap2/image/upload/v1574517782/Banners/moto_wkbqnu.jpg)"></div>
+  <div class="background" style="background-image:url(https://res.cloudinary.com/proteap2/image/upload/v1574517782/Banners/jetski_oiw7r0.jpg)"></div>
+  <div class="background" style="background-image:url(https://res.cloudinary.com/proteap2/image/upload/v1574517773/Banners/cargo_dpwtgr.jpg)"></div>
+  <div class="background" style="background-image:url(https://res.cloudinary.com/proteap2/image/upload/v1574517787/Banners/yachts_wkovfp.jpg)"></div>
 </section>
+
 
 <!-- Features -->
 <section class="slide fade whiteSlide">
   <div class="content">
     <div class="container">
       <div class="wrap noSpaces">
-        <div class="fix-12-12 margin-top-20"">
+        <div class="fix-12-12 margin-top-15"">
           <ul class="flex grid-49 later equal">
             <li class="col-3-12">
               <div class="fix-4-12 ae-4 fromCenter">
@@ -327,17 +351,19 @@
           </ul>
         </div>
 
-        <div class="fix-12-12 margin-top-20">
+        <div class="fix-12-12 margin-top-15">
           <ul class="grid grid-81 ae-5 fixedSpaces equal equalMobile">
             <li class="col-6-12">
               <div class="videoThumbnail noShadow wide cover equalElement popupTrigger ae-4" data-popup-id="protea-presentation">
                 <img src="assets/img/video/proteap2-presentation.jpg" alt=""/>
               </div>
+              <h3 class="margin-top-2">Présentation du traitement Diesel</3>
             </li>
             <li class="col-6-12">
               <div class="videoThumbnail noShadow wide cover equalElement popupTrigger ae-4" data-popup-id="stac-fr">
                 <img src="assets/img/video/stac-fr.jpg" alt=""/>
               </div>
+              <h3 class="margin-top-2">Test à l'occasion de la semaine européenne du développement durable</3>
             </li>
           </ul>
         </div>

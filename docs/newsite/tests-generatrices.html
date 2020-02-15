@@ -103,13 +103,34 @@
 </svg>
 
 
+<style>
+.instagram {background: #303030;}
+.sections .menu li a {padding: 4px 3px 5px;}
+.dropdown[data-dropdown-id="moreIcons"] {margin-left: 13px;}
+.dropdown[data-dropdown-id="moreIcons"] li {width:100%;text-align:left;padding:0;}
+.dropdown[data-dropdown-id="moreIcons"] li:last-child {border-radius:0 0 7px 7px; overflow:hidden;}
+.dropdown[data-dropdown-id="moreIcons"] li a {display: block;padding: 12px 20px 13px;opacity:1 !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a:not(:hover) {background:transparent!important;box-shadow: 0 1px 0 #ccc inset; z-index:-1; color: #303030 !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a:hover {color:#fff;}
+.dropdown[data-dropdown-id="moreIcons"] li a:hover svg {fill:#fff !important;}
+.dropdown[data-dropdown-id="moreIcons"] li a svg { display:inline; width: 24px; height:24px; fill:#303030 !important; vertical-align: middle; margin-right:10px;}
+</style>
 <!-- Navigation -->
 <nav class="panel top small fixed defaultPanel">
   <div class="submenu white">
     <div class="sections">
+      <div class="left">
+      </div>
       <div class="center">
         <ul class="menu sourceSans">
           <li>tél: (+33) 988.995.230</li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul class="menu uppercase crop small">
+          <li><a href="http://twitter.com/designmodo" target="_blank"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
+          <li><a href="https://www.facebook.com/designmodo/" target="_blank"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+          <li class="dropdownTrigger" data-dropdown-id="moreIcons"><svg class="panelIcon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#more"></use></svg></li>
         </ul>
       </div>
     </div>
